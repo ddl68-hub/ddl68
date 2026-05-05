@@ -227,6 +227,41 @@
         .connect-btn:hover { background: #d66b6b; }
 
         .footer { text-align: center; padding: 60px; font-size: 0.9rem; color: var(--primary-red); letter-spacing: 2px; }
+        .resume-btn {
+    background-color: var(--primary-red);
+    color: white;
+    padding: 14px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid var(--primary-red);
+    display: inline-block;
+}
+
+.resume-btn:hover {
+    background-color: transparent;
+    color: var(--primary-red);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(230, 126, 126, 0.2);
+}
+
+.resume-btn-outline {
+    background-color: transparent;
+    color: var(--primary-red);
+    padding: 14px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid var(--primary-red);
+    display: inline-block;
+}
+
+.resume-btn-outline:hover {
+    background-color: var(--soft-pink);
+    transform: translateY(-3px);
+}
     </style>
 </head>
 <body>
@@ -240,10 +275,13 @@
         <nav class="nav-table-container">
             <table class="nav-table">
                 <tr>
-                    <td><a href="#profile" class="nav-link">My Profile</a></td>
-                    <td><a href="#experiences" class="nav-link">Experiences</a></td>
-                    <td><a href="#skills" class="nav-link">Skills</a></td>
-                    <td><a href="#involvement" class="nav-link">Involvement</a></td>
+                   <nav class="nav-table-container">
+    <table class="nav-table">
+        <tr>
+            <td><a href="#profile" class="nav-link">My Profile</a></td>
+            <td><a href="#experiences" class="nav-link">Experiences</a></td>
+            <td><a href="#skills" class="nav-link">Skills</a></td>
+            <td><a href="#resume" class="nav-link">Resume</a></td> <td><a href="#connect" class="nav-link">Let's Connect</a></td>
                     <td><a href="#connect" class="nav-link">Let's Connect</a></td>
                 </tr>
             </table>
@@ -330,7 +368,20 @@
                 <a href="https://linkedin.com/in/dylan-reese-d-laroza-070148299" target="_blank" style="color:var(--primary-red); font-weight:600; text-decoration:none;">LinkedIn ౨ৎ</a>
             </div>
         </section>
-
+<section id="resume" class="glass-card animate__animated animate__fadeInUp" style="text-align: center; margin-top: 40px;">
+    <h2>Curriculum Vitae</h2>
+    <p>View or download my full professional background and academic achievements as a May 2027 Accounting candidate.</p>
+    
+    <div style="margin-top: 30px; display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+        <a href="Assets/Resume.pdf" target="_blank" class="resume-btn">
+            View Resume ౨ৎ
+        </a>
+        
+        <a href="Assets/Resume.pdf" download="Dylan_Laroza_Resume.pdf" class="resume-btn-outline">
+            Download PDF ✨
+        </a>
+    </div>
+</section>
         <footer class="footer">
             DYLAN REESE D. LAROZA ౨ৎ 2026
         </footer>
